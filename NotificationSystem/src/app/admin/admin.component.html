@@ -1,0 +1,61 @@
+<nav class="navbar fixed-top navbar-light" style="background-color: #98b1c2; ">
+  <a href="/employeePortal"  class="navigate" role="button">Go to Employee Portal</a>
+  
+</nav>
+<br><br>
+<label for="type">Choose Notification Type:</label>
+<br><br>
+<select id="type"  [(ngModel)]="type">
+  <option value="EVENT">Events/Celebrations</option>
+  <option value="URGENT">Urgent</option>
+  <option value="HOLIDAY">Holiday Announcement</option>
+  <option value="NAGARRONEWS">Nagarro News</option>
+  <option value="NEWPOLICY">New Policy</option>
+</select>
+<br><br>
+
+<label for="message">Type Your Message Here:</label>
+<br><br>
+<textarea [(ngModel)]="message"></textarea>
+
+<br><br>
+<button class="btn btn-primary" type="submit" (click)="sendType()"> Submit</button>
+
+<br><br>
+
+<div class="conatiner">
+  
+  <div class="card">
+ <button class="btn" type="submit" (click)="showNotification()"> Show Notifications</button>
+ <br><br>
+  <div class="card-header" id="heading">Notifications</div> 
+    <div class="col">
+          <div class="card-body text-dark " id="data" >
+          <div class="card-text">
+             <table class="table ">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Message</th> 
+                    <th scope="col">Clear Notifications</th>                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let notification of notificationList">
+                    <td>{{ notification.id}}</td>
+                    <td>{{ notification.type }}</td>
+                    <td>{{ notification.message}}</td>
+                    <td><button class="btn btn-primary" type="submit" (click)="clearNotification(notification.id)" >Clear</button> </td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+          
+        </div>
+          
+        </div>
+      </div>
+</div>
+ 

@@ -1,0 +1,68 @@
+<div class="row">
+
+
+    <div class="column">
+    <div class="card">
+    <h3>Write you Email and Subscribe Here</h3>
+    <label for="email">Type Your Message Here:</label>
+    <br><br>
+    <input type="email" [(ngModel)]="email">
+    <br><br>
+    <h3>Please Select Notification types:</h3>
+    
+    <label for="event"><b>Event :</b></label>
+
+    <input type="radio" id="event" name="event"  [(ngModel)]="event" value="Subscribe">
+    <label for="event">Subscribe</label>
+
+    <input type="radio" id="event" name="event"  [(ngModel)]="event" value="Unsubscribe">
+    <label for="event">Unsubscribe</label>
+
+
+    <br><br><label for="event"><b>Urgent :</b></label>
+
+    <input type="radio" id="urgent" name="urgent"  [(ngModel)]="urgent" value="Subscribe">
+    <label for="urgent">Subscribe</label>
+
+    <input type="radio" id="urgent" name="urgent"  [(ngModel)]="urgent" value="Unsubscribe">
+    <label for="event">Unsubscribe</label>
+
+    <br><br><label for="event"><b>Holiday  :</b></label>
+
+    <input type="radio" id="holiday" name="holiday"  [(ngModel)]="holiday" value="Subscribe">
+    <label for="holiday">Subscribe</label>
+
+    <input type="radio" id="holiday" name="holiday"  [(ngModel)]="holiday"  value="Unsubscribe">
+    <label for="holiday">Unsubscribe</label>
+
+    <br><br><label for="event"><b>Nagarro News:</b> </label>
+
+    <input type="radio" id="news" name="news"  [(ngModel)]="news" value="Subscribe">
+    <label for="news">Subscribe</label>
+
+    <input type="radio" id="news" name="news"  [(ngModel)]="news" value="Unsubscribe">
+    <label for="news">Unsubscribe</label>
+
+
+    <br><br><label for="event"><b>New Policy: </b></label>
+
+    <input type="radio" id="policy" name="policy"  [(ngModel)]="policy" value="Subscribe">
+    <label for="urgent">Subscribe</label>
+
+    <input type="radio" id="policy" name="policy"  [(ngModel)]="policy" value="Unsubscribe">
+    <label for="policy">Unsubscribe</label>
+
+    <br><br><button type="submit"  (click)="subscribe()">Submit</button>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="column">
+      <div class="card">
+
+      </div>
+    </div>
+</div>

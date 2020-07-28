@@ -1,0 +1,58 @@
+.col{
+    text-align: center;
+}
+.card-header{
+    background-color: rgb(191, 134, 194);
+    font-family: cursive;
+    font-weight: bolder;
+    height: 30px;
+    text-align: center;
+    
+}
+.card-body{
+    background-color: rgb(225, 200, 226);
+    
+}
+.card {
+    width: 600px;
+    text-align: center;
+    margin-left: 400px;
+}
+th, td { 
+    width:150px; 
+    text-align:center; 
+    border:1px solid black; 
+    padding:2px 
+  
+} 
+
+#data{
+    font-family: cursive; 
+  }
+
+  .btn{
+      background-color: rgba(187, 100, 187, 0.836);
+      width:300px;
+      height: 40px;
+  }
+
+  
+  .links{
+    color: white;
+    }
+    
+   
+    
+    .navbar{
+        width: 100%;
+        height:40px
+    }
+    a{
+        font-family: cursive;
+        
+    }
+
+    .navigate{
+        text-align: right;
+
+    }
